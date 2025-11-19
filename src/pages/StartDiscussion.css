@@ -1,0 +1,149 @@
+/* Overlay */
+.sd-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 4rem;
+  z-index: 1000;
+}
+
+/* Modal */
+.sd-modal {
+  width: 520px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.sd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sd-header h2 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.sd-subtext {
+  margin-top: 0.2rem;
+  margin-bottom: 1.4rem;
+  color: #666;
+}
+
+.sd-close {
+  background: none;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Label */
+.sd-label {
+  margin-top: 1rem;
+  font-weight: 600;
+  display: block;
+}
+
+.required {
+  color: red;
+}
+
+/* Inputs */
+.sd-input,
+.sd-textarea,
+.sd-select {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.7rem;
+  border-radius: 8px;
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.sd-textarea {
+  height: 120px;
+  resize: none;
+}
+
+.sd-charcount {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.2rem;
+}
+
+/* Tag Row */
+.sd-tag-input-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.sd-add-btn {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sd-tag-info {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.4rem;
+}
+
+.sd-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.sd-tag {
+  background: #eee;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* Footer Buttons */
+.sd-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.sd-cancel {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sd-post {
+  background: #6b6a79;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}

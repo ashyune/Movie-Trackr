@@ -1,0 +1,44 @@
+.section-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Horizontal Netflix-style scrolling row */
+.cards-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 0;          /* removed extra space that caused double scrollbar */
+  scroll-behavior: smooth;
+  scrollbar-width: none;      /* Firefox hide scrollbar */
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;              /* Chrome/Safari/Edge hide scrollbar */
+}
+
+/* Movie Card Styles */
+.movie-card {
+  width: 180px;
+  background: #1A1735;
+  border: 1px solid #2A254F;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;              /* keeps size consistent */
+}
+
+.poster {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-bottom {
+  height: 60px;
+}

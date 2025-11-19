@@ -1,0 +1,217 @@
+/* Ensure the profile page fills the entire viewport */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #1a1d29;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Ensure no unexpected margins/padding */
+* {
+  box-sizing: border-box;
+}
+
+/* Main profile container */
+.profile-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: #1a1d29;
+}
+
+/* Profile content wrapper */
+.profile-content {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Profile header */
+.profile-header {
+  background: #252837;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.profile-header p {
+  font-size: 13px;
+  color: #b8b8d0;
+  font-weight: 400;
+}
+
+/* Profile info section */
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  background-color: #252538;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #3a3a52;
+}
+
+.profile-avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7b68ee 0%, #9d8ef7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffffff;
+  border: 3px solid #4a4a6a;
+}
+
+.status-indicator {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  background-color: #252538;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #b8b8d0;
+  border: 1px solid #3a3a52;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.profile-details .username {
+  font-size: 14px;
+  color: #b8b8d0;
+  margin-bottom: 6px;
+}
+
+.profile-details .email {
+  font-size: 13px;
+  color: #9999b8;
+  margin-bottom: 6px;
+}
+
+.profile-details .phone {
+  font-size: 13px;
+  color: #9999b8;
+}
+
+/* Edit profile button */
+.edit-profile-btn {
+  background: linear-gradient(135deg, #8b7cee 0%, #a89ef7 100%);
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 124, 238, 0.3);
+}
+
+.edit-profile-btn:hover {
+  background: linear-gradient(135deg, #9d8ef7 0%, #b8aef9 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(139, 124, 238, 0.4);
+}
+
+/* Profile sections */
+.profile-section {
+  background-color: #252538;
+  border: 1px solid #3a3a52;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  min-height: 80px;
+}
+
+.profile-section h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.profile-section.large {
+  min-height: 120px;
+}
+
+/* Logout button */
+.logout-btn {
+  background: linear-gradient(135deg, #8b7cee 0%, #a89ef7 100%);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 124, 238, 0.3);
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #9d8ef7 0%, #b8aef9 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(139, 124, 238, 0.4);
+}
+
+.logout-btn::after {
+  content: '⇒';
+  font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 1rem;
+  }
+  
+  .profile-content {
+    padding: 16px;
+  }
+  
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .avatar-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+}

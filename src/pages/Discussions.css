@@ -1,0 +1,130 @@
+.discussion-page {
+  background-color: #121223;
+  color: #fff;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading + tagline */
+.discussion-page h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.discussion-page p {
+  margin-bottom: 1.5rem;
+  color: #b7b7c9;
+}
+
+/* Top Row (filters + button) */
+.discussion-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.filter-buttons button {
+  background-color: #22223b;
+  color: #cfcfe8;
+  border: 1px solid #2f2f4d;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.filter-buttons button:hover {
+  background-color: #2f2f4d;
+}
+
+/* Start Discussion Button */
+.start-discussion {
+  background-color: #6a67ff;
+  color: #fff;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.start-discussion:hover {
+  background-color: #7b79ff;
+}
+
+/* Discussion Cards */
+.discussion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.discussion-card {
+  background-color: #1c1c2e;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+/* User section */
+.user-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+/* Movie Tag */
+.movie-tag {
+  background-color: #2e2e4a;
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  font-size: 0.85rem;
+  color: #cfcff5;
+}
+
+/* Content Text */
+.content {
+  margin-bottom: 0.7rem;
+  line-height: 1.45;
+  color: #e7e7f1;
+}
+
+/* Hashtags */
+.hashtags span {
+  background-color: #343455;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  margin-right: 0.35rem;
+  color: #bdbde6;
+}
+
+/* Actions (reply & like) */
+.actions {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 0.9rem;
+  color: #9c9cbb;
+  margin-top: 0.6rem;
+}
+
+.actions span {
+  cursor: pointer;
+}

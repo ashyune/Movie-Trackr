@@ -1,0 +1,341 @@
+/* Friends page styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #0a0b0f;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Main friends container */
+.friends-container {
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0b0f;
+  padding: 2rem;
+}
+
+/* Friends card */
+.friends-card {
+  background: linear-gradient(135deg, #1a1d2e 0%, #0f0f25 100%);
+  border: 2px solid #2d2d5a;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* Header section */
+.friends-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-content h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.header-content p {
+  font-size: 12px;
+  color: #9999cc;
+}
+
+.add-friends-btn {
+  background: linear-gradient(135deg, #8b7cee 0%, #a89ef7 100%);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 124, 238, 0.4);
+  white-space: nowrap;
+}
+
+.add-friends-btn:hover {
+  background: linear-gradient(135deg, #9d8ef7 0%, #b8aef9 100%);
+  transform: translateY(-2px);
+}
+
+/* Section styling */
+.friends-section {
+  margin-bottom: 28px;
+}
+
+.section-header {
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+
+.section-header p {
+  font-size: 12px;
+  color: #9999cc;
+}
+
+/* Request items */
+.request-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a35;
+  border: 1px solid #2d2d5a;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.request-item:hover {
+  background-color: #22223f;
+  border-color: #3d3d6a;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6a6a8a 0%, #4a4a6a 100%);
+  border: 2px solid #3a3a5a;
+  flex-shrink: 0;
+}
+
+.request-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.accept-btn {
+  background: linear-gradient(135deg, #8b7cee 0%, #a89ef7 100%);
+  color: #ffffff;
+}
+
+.accept-btn:hover {
+  background: linear-gradient(135deg, #9d8ef7 0%, #b8aef9 100%);
+  transform: scale(1.05);
+}
+
+.reject-btn {
+  background: linear-gradient(135deg, #4a4a6a 0%, #3a3a5a 100%);
+  color: #ffffff;
+}
+
+.reject-btn:hover {
+  background: linear-gradient(135deg, #5a5a7a 0%, #4a4a6a 100%);
+  transform: scale(1.05);
+}
+
+/* Chat items */
+.chat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a35;
+  border: 1px solid #2d2d5a;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chat-item:hover {
+  background-color: #22223f;
+  border-color: #3d3d6a;
+  transform: translateX(4px);
+}
+
+.chat-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #8b7cee 0%, #a89ef7 100%);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* Friends list header */
+.friends-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.friends-list-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.create-group-btn {
+  background: linear-gradient(135deg, #8b7cee 0%, #a89ef7 100%);
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 124, 238, 0.4);
+  white-space: nowrap;
+}
+
+.create-group-btn:hover {
+  background: linear-gradient(135deg, #9d8ef7 0%, #b8aef9 100%);
+  transform: translateY(-2px);
+}
+
+.create-group-btn::before {
+  content: '👥';
+  font-size: 14px;
+}
+
+/* Friend items */
+.friend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a35;
+  border: 1px solid #2d2d5a;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.friend-item:hover {
+  background-color: #22223f;
+  border-color: #3d3d6a;
+}
+
+.friend-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #6a6a8a 0%, #4a4a6a 100%);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+  background: linear-gradient(135deg, #8b7cee 0%, #a89ef7 100%);
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .friends-container {
+    padding: 1rem;
+  }
+
+  .friends-card {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .friends-header-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-friends-btn {
+    width: 100%;
+  }
+
+  .friends-list-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .create-group-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .friends-card {
+    padding: 16px;
+  }
+
+  .header-content h1 {
+    font-size: 20px;
+  }
+
+  .section-header h2,
+  .friends-list-header h2 {
+    font-size: 15px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .action-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
